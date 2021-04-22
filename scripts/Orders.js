@@ -44,7 +44,7 @@ export const Orders = () => {
 
         if (employee !== null && product !== null) {
 
-            html += `<li>${product.name} was sold by ${employee.name} on ${new Date(order.timestamp).toLocaleDateString()}</li>`
+            html += `<li class="pastOrders">${product.name} was sold by ${employee.name} on ${new Date(order.timestamp).toLocaleDateString()}</li>`
         }
 
         html += "</ul>"
